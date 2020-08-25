@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calc">
+        <input class="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"
+            placeholder="0">
+        <div class="button-row-5">
+            <div class="button"><button value='('
+                    onclick=" display = document.querySelector('.display'); display.value += value">(</button></div>
+            <div class="button"><button value=')'
+                    onclick=" display = document.querySelector('.display'); display.value += value">)</button></div>
+            <div class="button"><button value='C'
+                    onclick=" display = document.querySelector('.display'); display.value = ''">C</button></div>
+            <div class="button"><button value='←' onclick=" function removeLastCharacter(str){
+                let charcter_arr = str.split('');
+                return charcter_arr.slice(0, charcter_arr.length - 1).join('');
+              }; display.value = removeLastCharacter(display.value)">←</button>
+            </div>
+        </div>
+        <div class="button-row-1">
+            <div class="button"><button value='7'
+                    onclick=" display = document.querySelector('.display'); display.value += value">7</button></div>
+            <div class="button"><button value='8'
+                    onclick=" display = document.querySelector('.display'); display.value += value">8</button></div>
+            <div class="button"><button value='9'
+                    onclick=" display = document.querySelector('.display'); display.value += value">9</button></div>
+            <div class="button"><button value='/'
+                    onclick=" display = document.querySelector('.display'); display.value += value">÷</button></div>
+        </div>
+        <div class="button-row-2">
+            <div class="button"><button value='4'
+                    onclick=" display = document.querySelector('.display'); display.value += value">4</button></div>
+            <div class="button"><button value='5'
+                    onclick=" display = document.querySelector('.display'); display.value += value">5</button></div>
+            <div class="button"><button value='6'
+                    onclick=" display = document.querySelector('.display'); display.value += value">6</button></div>
+            <div class="button"><button value='*'
+                    onclick=" display = document.querySelector('.display'); display.value += value">x</button></div>
+        </div>
+        <div class="button-row-3">
+            <div class="button"><button value='1'
+                    onclick=" display = document.querySelector('.display'); display.value += value">1</button></div>
+            <div class="button"><button value='2'
+                    onclick=" display = document.querySelector('.display'); display.value += value">2</button></div>
+            <div class="button"><button value='3'
+                    onclick=" display = document.querySelector('.display'); display.value += value">3</button></div>
+            <div class="button"><button value='-'
+                    onclick=" display = document.querySelector('.display'); display.value += value">-</button></div>
+        </div>
+        <div class="button-row-4">
+            <div class="button"><button value='0'
+                    onclick=" display = document.querySelector('.display'); display.value += value">0</button></div>
+            <div class="button"><button value='.'
+                    onclick=" display = document.querySelector('.display'); display.value += value">.</button></div>
+            <div class="button"><button value='=' onclick=" display.value=eval(display.value)">=</button>
+            </div>
+            <div class="button"><button value='+'
+                    onclick=" display = document.querySelector('.display'); display.value += value">+</button></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

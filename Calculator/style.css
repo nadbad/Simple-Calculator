@@ -1,0 +1,54 @@
+* {
+    background-color: rgb(40, 40, 40);
+}
+
+.calc {
+    width: 50%;
+    margin: 175px 200px auto auto;
+}
+
+.button-row-1 .button{
+    display: inline-block;
+    padding: 5px;
+}
+.button-row-2 .button{
+    display: inline-block;
+    padding: 5px;
+}
+.button-row-3 .button{
+    display: inline-block;
+    padding: 5px;
+}
+.button-row-4 .button{
+    display: inline-block;
+    padding: 5px;
+}
+.button-row-5 .button{
+    display: inline-block;
+    padding: 5px;
+}
+
+button {
+    outline: none;
+    font-size: 20px;
+    height: 45px;
+    width: 80px;
+    background-color: lightslategray;
+}
+
+button:hover {
+    background-color: rgba(119, 136, 153, 0.7);
+}
+
+.display {
+    background-color: rgb(161, 161, 161);
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding: 10px 25px 10px 20px;
+    font-size: 26px;
+    outline: none;
+    border: black;
+}
+
+
+
